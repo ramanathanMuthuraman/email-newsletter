@@ -5,8 +5,8 @@
   "repository": "zurb/foundation-emails-template",
   "main": "gulpfile.babel.js",
   "scripts": {
-    "start": "gulp --root educhronicle",
-    "build": "gulp --production --root educhronicle",
+    "start": "gulp --root kindleguard",
+    "build": "gulp --production --root kindleguard",
     "start:samples": "gulp --root samples",
     "build:samples": "gulp --production --root samples",
     "zip": "gulp zip --production",

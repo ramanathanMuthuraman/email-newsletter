@@ -1,0 +1,11 @@
+@import 'settings';
+@import 'foundation-emails';
+@import 'template/template';
+
+.header__row {
+  background: $primary-color;
+}
+
+.content__row {
+  background: $medium-gray;
+}
