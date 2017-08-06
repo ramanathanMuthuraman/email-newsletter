@@ -14,22 +14,22 @@
                 <columns small="6" large="3">
                     <spacer size="16"></spacer>
                     <h6>Student Name</h6>
-                    <h6>xxxxx</h6>
+                    <h6>{{data.info.studentName}}</h6>
                 </columns>
                 <columns small="6" large="3">
                     <spacer size="16"></spacer>
                     <h6>Teacher Name</h6>
-                    <h6>xxxxxx</h6>
+                    <h6>{{data.info.teacherName}}</h6>
                 </columns>
                 <columns small="6" large="3">
                     <spacer size="16"></spacer>
                     <h6>Class</h6>
-                    <h6>xxxxxx</h6>
+                    <h6>{{data.info.class}}</h6>
                 </columns>
                 <columns small="6" large="3">
                     <spacer size="16"></spacer>
                     <h6>Date</h6>
-                    <h6>xxxxxx</h6>
+                    <h6>{{data.info.date}}</h6>
                 </columns>
             </row>
         </container>
@@ -39,44 +39,22 @@
                     <h4>Marksheet</h4>
                 </columns>
             </row>
+            {{#each data.marks}}
             <row class="content__row">
                 <columns small="6">
-                    <p>English</p>
+                    <p>{{this.subject}}</p>
                 </columns>
                 <columns small="6">
-                    <p>100</p>
+                    <p>{{this.score}}</p>
                 </columns>
             </row>
-            <row class="content__row">
-                <columns small="6">
-                    <p>English</p>
-                </columns>
-                <columns small="6">
-                    <p>100</p>
-                </columns>
-            </row>
-            <row class="content__row">
-                <columns small="6">
-                    <p>English</p>
-                </columns>
-                <columns small="6">
-                    <p>100</p>
-                </columns>
-            </row>
-            <row class="content__row">
-                <columns small="6">
-                    <p>English</p>
-                </columns>
-                <columns small="6">
-                    <p>100</p>
-                </columns>
-            </row>
+            {{/each}}
         </container>
         <container class="remarks">
             <row class="content__row">
                 <columns>
                     <h4>Remarks</h4>
-                    <p>Lorem ipsum Lorem ipsum</p>
+                    <p>{{data.remarks}}</p>
                 </columns>
             </row>
         </container>

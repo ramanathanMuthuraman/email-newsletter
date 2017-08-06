@@ -32,6 +32,7 @@ const rootPages = path.join(src, 'pages', root);
 const layouts = path.join(src, 'layouts');
 const partials = path.join(src, 'partials');
 const helpers = path.join(src, 'helpers');
+const data = path.join(src, 'data', root);
 const sourceAssets = path.join(src, assets);
 
 // Look for the --production flag
@@ -75,7 +76,8 @@ function pages() {
       root: rootPages,
       layouts,
       partials,
-      helpers
+      helpers,
+      data: path.join(data, '/')
     }))
     .pipe(inky())
     .pipe(gulp.dest(dist));
