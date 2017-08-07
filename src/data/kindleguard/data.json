@@ -1,0 +1,23 @@
+{
+  "info": {
+    "studentName": "ABC",
+    "teacherName": "XYZ",
+    "class": "12",
+    "date": "12/04/17"
+  },
+  "marks": [
+    {
+      "subject": "English",
+      "score": "100"
+    },
+    {
+      "subject": "Physics",
+      "score": "100"
+    },
+    {
+      "subject": "Chemistry",
+      "score": "100"
+    }
+  ],
+  "remarks": "Lorem ipsum Lorem ipsum"
+}
